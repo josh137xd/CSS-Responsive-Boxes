@@ -1,0 +1,48 @@
+*{
+    border: 1px solid black;
+  }
+  body {
+    display: flex; 
+     flex-flow: column wrap;
+    justify-content:center;
+    background: blanchedalmond;   
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .container{ 
+  align-items:  center;
+    }
+  header{ padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    justify-content:center;
+    margin:auto;}
+  main{
+    text-align: center;
+    justify-content:center;
+    padding: 7em 20em 7em 20em;
+    margin:auto;
+  }
+  
+  footer{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+     border:1px; 
+     justify-content:center;
+    }
+    @media (min-width: 600px) {
+    .container {
+      flex-direction:column;
+      flex-wrap:wrap;
+    }
+    main {
+      max-width: 60%;
+    }
+    header, footer {
+      justify-content:center;
+      width: 100%;
+    }
+  }      
+  
